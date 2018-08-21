@@ -1,0 +1,48 @@
+@include desktop {
+  body {
+    font-size: 14px;
+  }
+}
+@include tablet {
+  body {
+    font-size: 10px;
+  }
+}
+@include phone {
+  body {
+    font-size: 8px;
+  }
+}
+
+.fullName {
+  font-size: 1.7vw;
+  @include desktop {
+    font-size: 1.2vw;
+  }
+  @include bigTablet {
+    font-size: 0.8vw;
+  }
+  // font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 0.7em;
+}
+
+.email {
+  text-transform: lowercase;
+}
+
+.emailTitle {
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.email,
+.emailTitle {
+  font-size: 1.2vw;
+  @include desktop {
+    font-size: 1vw;
+  }
+  @include bigTablet {
+    font-size: 1vw;
+  }
+}

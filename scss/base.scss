@@ -1,0 +1,79 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  @include desktop {
+    width: 85%;
+  }
+  margin: 4em auto 0;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.tester {
+  background-color: #F0F0F0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  @include margin-height(1em);
+  @include phone {
+    margin: 0;
+  }
+  @include smallTablet {
+    margin: 0;
+  }
+  padding: 1em;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.picture {
+  @include desktop {
+    height: 7vw;
+    width: 7vw;
+  }
+  @include bigTablet {
+    height: 8vw;
+    width: 8vw;
+  }
+  @include smallTablet {
+    height: 10vw;
+    width: 10vw;
+  }
+  @include phone {
+    height: 10vw;
+    width: 10vw;
+  }
+  // border: 2px solid black;
+  border-radius: 5px;
+}
+
+.information {
+  margin-left: 1.8em;
+  margin-top: 0.6em;
+  display: flex;
+  flex-direction: column;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: all 0.3s ease;
+}
